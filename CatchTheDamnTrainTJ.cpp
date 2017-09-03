@@ -12,11 +12,11 @@ int main()
            efficiency,
            mass0,
 		   mass1;
-    //velocity is delta v, efficiency is v_e, mass0 is initial mass, mass1 is final mass
+    //velocity is Delta-v, efficiency is specific impulse, mass0 is initial mass, mass1 is payload mass
 
 
-	
-	cout << "T.J. enter your velocity: ";
+	// required Delta-v
+	cout << "Enter your Delta-v: ";
 	cin >> velocity;
 	while(!cin || velocity <= 0) //input validation, could've been put in a function, but ehhhhhh copy pasta is cool
 	{
@@ -25,8 +25,8 @@ int main()
 		cout << "Wrong input! Input a new one: ";
 		cin >> velocity;
 	}
-	
-	cout << "T.J. enter your efficiency: ";
+	// Specific impulse
+	cout << "Enter your specific impulse: ";
 	cin >> efficiency;
 	while(!cin || efficiency <= 0)
 	{
@@ -35,8 +35,8 @@ int main()
 		cout << "Wrong input! Input a new one: ";
 		cin >> efficiency;
 	}
-	
-	cout << "T.J. enter the mass: ";
+	// payload mass
+	cout << "Enter you payload mass: ";
 	cin >> mass1;
 	while(!cin || mass1 <= 0)
 	{
