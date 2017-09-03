@@ -18,7 +18,7 @@ int main()
 	
 	cout << "T.J. enter your velocity: ";
 	cin >> velocity;
-	while(!cin) //input validation, could've been put in a function, but ehhhhhh copy pasta is cool
+	while(!cin || velocity <= 0) //input validation, could've been put in a function, but ehhhhhh copy pasta is cool
 	{
 		cin.clear();
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -28,7 +28,7 @@ int main()
 	
 	cout << "T.J. enter your efficiency: ";
 	cin >> efficiency;
-	while(!cin)
+	while(!cin || efficiency <= 0)
 	{
 		cin.clear();
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -38,7 +38,7 @@ int main()
 	
 	cout << "T.J. enter the mass: ";
 	cin >> mass1;
-	while(!cin)
+	while(!cin || mass1 <= 0)
 	{
 		cin.clear();
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
